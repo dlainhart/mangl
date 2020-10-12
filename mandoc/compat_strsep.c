@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRSEP
-
-int dummy;
-
-#else
+#if !HAVE_STRSEP
 
 /*	$Id: compat_strsep.c,v 1.4 2014/12/11 09:05:01 schwarze Exp $	*/
 /*	$OpenBSD: strsep.c,v 1.7 2014/02/05 20:42:32 stsp Exp $	*/

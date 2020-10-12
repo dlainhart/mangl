@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_MKDTEMP
-
-int dummy;
-
-#else
+#if !HAVE_MKDTEMP
 
 /*	$Id: compat_mkdtemp.c,v 1.2 2015/10/06 18:32:19 schwarze Exp $	*/
 /*

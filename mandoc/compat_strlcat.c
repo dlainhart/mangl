@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRLCAT
-
-int dummy;
-
-#else
+#if !HAVE_STRLCAT
 
 /*	$OpenBSD: strlcat.c,v 1.13 2005/08/08 08:05:37 espie Exp $	*/
 

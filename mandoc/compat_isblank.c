@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_ISBLANK
-
-int dummy;
-
-#else
+#if !HAVE_ISBLANK
 
 /*	$Id: compat_isblank.c,v 1.2 2015/10/06 18:32:19 schwarze Exp $	*/
 /*

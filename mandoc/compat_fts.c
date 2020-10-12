@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_FTS
-
-int dummy;
-
-#else
+#if !HAVE_FTS
 
 /*	$Id: compat_fts.c,v 1.14 2017/02/18 12:24:24 schwarze Exp $	*/
 /*	$OpenBSD: fts.c,v 1.56 2016/09/21 04:38:56 guenther Exp $	*/

@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_ERR
-
-int dummy;
-
-#else
+#if !HAVE_ERR
 
 /* $Id: compat_err.c,v 1.4 2015/11/26 07:42:11 schwarze Exp $ */
 /*

@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRINGLIST
-
-int dummy;
-
-#else
+#if !HAVE_STRINGLIST
 
 /*	$Id: compat_stringlist.c,v 1.6 2015/11/07 14:22:29 schwarze Exp $	*/
 /*

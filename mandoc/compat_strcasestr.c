@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRCASESTR
-
-int dummy;
-
-#else
+#if !HAVE_STRCASESTR
 
 /*	$Id: compat_strcasestr.c,v 1.4 2014/12/11 09:19:32 schwarze Exp $	*/
 /*	$NetBSD: strcasestr.c,v 1.3 2005/11/29 03:12:00 christos Exp $	*/

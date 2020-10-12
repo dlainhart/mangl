@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRLCPY
-
-int dummy;
-
-#else
+#if !HAVE_STRLCPY
 
 /*	$OpenBSD: strlcpy.c,v 1.11 2006/05/05 15:27:38 millert Exp $	*/
 

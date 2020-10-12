@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_GETLINE
-
-int dummy;
-
-#else
+#if !HAVE_GETLINE
 
 /*	$Id: compat_getline.c,v 1.1 2015/11/07 20:52:52 schwarze Exp $ */
 /*

@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_PROGNAME
-
-int dummy;
-
-#else
+#if !HAVE_PROGNAME
 
 /*	$Id: compat_progname.c,v 1.1 2015/11/06 16:30:33 schwarze Exp $	*/
 /*

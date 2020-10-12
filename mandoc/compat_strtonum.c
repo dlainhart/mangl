@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRTONUM
-
-int dummy;
-
-#else
+#if !HAVE_STRTONUM
 
 /*	$Id: compat_strtonum.c,v 1.1 2015/02/16 14:56:22 schwarze Exp $	*/
 /*	$OpenBSD: strtonum.c,v 1.7 2013/04/17 18:40:58 tedu Exp $	*/

@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_STRNDUP
-
-int dummy;
-
-#else
+#if !HAVE_STRNDUP
 
 /* $Id: compat_strndup.c,v 1.1 2018/02/27 11:16:23 schwarze Exp $ */
 /* OpenBSD: strndup.c,v 1.2 2015/08/31 02:53:57 guenther Exp */

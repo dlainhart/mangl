@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_GETSUBOPT
-
-int dummy;
-
-#else
+#if !HAVE_GETSUBOPT
 
 /*	$Id: compat_getsubopt.c,v 1.5 2014/08/17 20:53:50 schwarze Exp $	*/
 /*	$OpenBSD: getsubopt.c,v 1.4 2005/08/08 08:05:36 espie Exp $	*/

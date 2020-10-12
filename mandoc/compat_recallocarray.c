@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_RECALLOCARRAY
-
-int dummy;
-
-#else
+#if !HAVE_RECALLOCARRAY
 
 /*	$Id: compat_recallocarray.c,v 1.1 2017/06/12 19:05:47 schwarze Exp $ */
 /*	$OpenBSD: malloc.c,v 1.225 2017/05/13 07:11:29 otto Exp $ */

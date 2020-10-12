@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_OHASH
-
-int dummy;
-
-#else
+#if !HAVE_OHASH
 
 /* $OpenBSD: ohash.c,v 1.1 2014/06/02 18:52:03 deraadt Exp $ */
 

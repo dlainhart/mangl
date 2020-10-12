@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_VASPRINTF
-
-int dummy;
-
-#else
+#if !HAVE_VASPRINTF
 
 /*	$Id: compat_vasprintf.c,v 1.3 2015/10/06 18:32:19 schwarze Exp $	*/
 /*

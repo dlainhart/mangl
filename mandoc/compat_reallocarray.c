@@ -1,10 +1,6 @@
 #include "config.h"
 
-#if HAVE_REALLOCARRAY
-
-int dummy;
-
-#else
+#if !HAVE_REALLOCARRAY
 
 /*	$Id: compat_reallocarray.c,v 1.4 2014/12/11 09:05:01 schwarze Exp $	*/
 /*	$OpenBSD: reallocarray.c,v 1.2 2014/12/08 03:45:00 bcook Exp $	*/
